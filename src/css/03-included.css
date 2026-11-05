@@ -20,7 +20,7 @@
 
 .s-included__text { width: 305u; display: flex; flex-direction: column; gap: 4u; }
 .s-included__name { font-family: var(--font-body); font-weight: 800; font-size: 20u; line-height: normal; }
-.s-included__body { font-family: var(--font-body); font-weight: 400; font-size: 16u; line-height: 22.8u; }
+.s-included__body { font-family: var(--font-body); font-weight: 400; font-size: 16u; line-height: normal; }
 .s-included__body--helv { font-family: var(--font-helv); line-height: 20u; }
 .s-included__name span { display: inline; }
 

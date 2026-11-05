@@ -17,13 +17,13 @@
 .s-transformations__body { margin-top: 8u; display: flex; flex-direction: column; gap: 8u; }
 .s-transformations__quote { display: flex; gap: 8u; align-items: flex-start; }
 .s-transformations__qmark { width: 15u; height: 13u; flex-shrink: 0; }
-.s-transformations__text { flex: 1; min-width: 0; font-size: 14u; line-height: 20u; color: #fff; }
+.s-transformations__text { flex: 1; min-width: 0; font-size: 14u; line-height: normal; color: #fff; }
 .s-transformations__text b { font-weight: 700; }
 .s-transformations__author { display: flex; align-items: center; gap: 8u; height: 43u; }
 .s-transformations__avatar { width: 29u; height: 29u; border-radius: 50%; margin-top: 14u; align-self: flex-start; margin-top: 7u; }
 .s-transformations__who { width: 136u; display: flex; flex-direction: column; line-height: normal; }
-.s-transformations__who strong { font-size: 16u; font-weight: 700; line-height: 23u; }
-.s-transformations__who span { font-size: 14u; line-height: 20u; }
+.s-transformations__who strong { font-size: 16u; font-weight: 700; line-height: normal; }
+.s-transformations__who span { font-size: 14u; line-height: normal; }
 
 .s-transformations__controls { position: relative; width: 380u; height: 69.23u; margin-top: 32u; }
 .s-transformations__progress { position: absolute; left: 0; top: 35u; width: 200u; height: 4u; }

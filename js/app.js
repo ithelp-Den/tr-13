@@ -2,7 +2,7 @@
 /* Shared behaviour: scroll reveal + payment-link binding. Section scripts live in src/js/NN-*.js */
 window.ZBL = window.ZBL || {
   // >>> Put the checkout URL here once it exists. Every element with [data-pay] gets it. <<<
-  payUrl: ''
+  payUrl: 'https://mmoschool.online/shop/item/13702'
 };
 
 (function () {

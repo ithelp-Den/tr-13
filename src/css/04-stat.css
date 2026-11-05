@@ -7,7 +7,7 @@
 .s-stat__pct { font-size: 65u; }
 .s-stat__title { left: 24u; top: 174u; width: 365u; font-family: var(--font-display); font-weight: 400; font-size: 40u; line-height: 47u; }
 .s-stat__line { position: absolute; left: 74u; top: 331u; width: 81u; height: 1px; }
-.s-stat__cap { left: 166u; top: 324.77u; width: 257u; font-family: var(--font-body); font-weight: 400; font-size: 20u; line-height: 25u; }
+.s-stat__cap { left: 166u; top: 324.77u; width: 257u; font-family: var(--font-helv); font-weight: 400; font-size: 20u; line-height: 25u; }
 
 .s-stat__card { position: absolute; width: 0; height: 0; opacity: 0; transition: opacity .8s var(--ease), transform 1.1s var(--ease); transition-delay: calc(var(--d, 0) * 1ms); }
 .s-stat__card img { position: absolute; left: 0; top: 0; width: var(--w); max-width: none; height: auto; transform: translate(-50%, -50%) rotate(var(--r)); filter: drop-shadow(0 8u 20u rgba(0,0,0,.35)); }
@@ -20,7 +20,7 @@
   .s-stat__pct { font-size: 85u; }
   .s-stat__title { left: 615u; top: 63.77u; width: 442u; font-size: 45u; line-height: 50u; }
   .s-stat__line { left: 715u; top: 240u; }
-  .s-stat__cap { left: 815u; top: 234u; width: 257u; font-size: 24u; }
+  .s-stat__cap { left: 815u; top: 234u; width: 257u; font-family: var(--font-body); font-size: 24u; }
   .s-stat__card--sahra { left: 155.97u; top: 71.37u; --w: 229.48u; --r: -15deg; --d: 100; }
   .s-stat__card--anna  { left: 498.41u; top: 336u;   --w: 241.73u; --r: 14deg;  --d: 250; }
   .s-stat__card--lena  { left: 1238.93u; top: 232.55u; --w: 257.92u; --r: -17.21deg; --d: 400; }

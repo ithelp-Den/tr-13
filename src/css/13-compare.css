@@ -10,10 +10,12 @@
 .s-compare__photo { position: absolute; left: 0; top: 0; max-width: none; height: auto; width: 199u; }
 .s-compare__half--after .s-compare__photo { left: -42u; top: 23.86u; width: 300.1u; height: 201u; }
 
-.s-compare__pill { position: absolute; left: 56u; top: 14u; width: 88u; height: 33u; border-radius: 56u; display: flex; align-items: center; justify-content: center; font-family: var(--font-body); font-weight: 600; font-size: 16u; line-height: 21u; letter-spacing: .04em; text-transform: uppercase; background: transparent; border: 1px solid rgba(255,255,255,.45); box-shadow: 0 20u 19u rgba(0,0,0,.32); }
+.s-compare__pill { position: absolute; left: 56u; top: 14u; width: 88u; height: 33u; border-radius: 56u; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', var(--font-body); font-weight: 600; font-size: 16u; line-height: 21u; letter-spacing: 0; text-transform: uppercase; background: transparent; border: 1px solid rgba(255,255,255,.45); box-shadow: 0 20u 19u rgba(0,0,0,.32); }
 .s-compare__half--after .s-compare__pill { left: 55u; top: 13u; }
 
 .s-compare__list { position: absolute; display: flex; flex-direction: column; }
+.s-compare__half--after .s-compare__pill { letter-spacing: .64u; }
+@media (min-width: 800px) { .s-compare__half--after .s-compare__pill { letter-spacing: 0; } }
 .s-compare__list li { display: flex; align-items: center; gap: 9u; font-family: var(--font-body); font-size: 14u; line-height: 17u; }
 .s-compare__list li > span { flex: none; text-box: trim-both cap alphabetic; }
 .s-compare__half--before .s-compare__list { left: 22u; top: 230.86u; width: 169u; gap: 26u; }

@@ -16,7 +16,7 @@
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 14u;
   padding: 4u 4u 14u; border-radius: 12u;
   background: linear-gradient(180deg, rgba(0,0,0,.2), var(--tint));
-  box-shadow: 0 4u 15u rgba(0,0,0,.15), inset 0 0 0 1px rgba(255,255,255,.2);
+  box-shadow: 0 4u 15u rgba(0,0,0,.15); isolation: isolate;
   transition: transform .45s var(--ease), box-shadow .45s var(--ease);
 }
 .s-bundle__vis { position: relative; flex: none; width: 178u; height: 136u; }
@@ -51,4 +51,14 @@
 @media (prefers-reduced-motion: reduce) {
   .s-bundle__card, .s-bundle__vis img { transition: none; }
   .s-bundle__card:hover { transform: none; }
+}
+
+@media (min-width: 800px) {
+  .s-bundle__card.is-inset { margin: 0 2u; }
+}
+
+.s-bundle__card::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,.28), rgba(255,255,255,.07) 55%, rgba(255,255,255,.1));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
 }

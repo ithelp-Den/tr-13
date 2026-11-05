@@ -1,6 +1,6 @@
 .s-contacts { background: #000; color: #fff; padding: 40u 24u; }
 .s-contacts__inner { display: flex; flex-direction: column; gap: 24u; }
-.s-contacts__title { font-size: 40u; line-height: 40u; }
+.s-contacts__title { font-family: var(--font-anton); font-size: 40u; line-height: normal; }
 .s-contacts__tiles { display: flex; justify-content: space-between; align-items: center; }
 .s-contacts__tile { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8u; width: 96.316u; height: 96.316u; border-radius: 24u; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.08)); box-shadow: inset 0 -2u 4u rgba(255,255,255,.25), inset 0 2u 4u rgba(0,0,0,.1); font-family: var(--font-body); font-size: 16u; line-height: 17.831u; white-space: nowrap; transition: transform .35s var(--ease), box-shadow .35s var(--ease), background-color .35s var(--ease); }
 .s-contacts__tile img { width: auto; height: 30u; max-width: none; transition: transform .35s var(--ease); }
@@ -19,7 +19,7 @@
 @media (min-width: 800px) {
   .s-contacts { padding: 100u 110u; }
   .s-contacts__inner { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "t tiles" "l tiles" "p tiles"; column-gap: 24u; row-gap: 0; align-items: center; }
-  .s-contacts__title { grid-area: t; font-size: 70u; line-height: 84u; }
+  .s-contacts__title { grid-area: t; font-family: var(--font-display); font-size: 70u; line-height: normal; }
   .s-contacts__legal { grid-area: l; margin-top: 24u; }
   .s-contacts__pay { grid-area: p; margin-top: 24u; }
   .s-contacts__tiles { grid-area: tiles; gap: 24u; justify-content: flex-start; }

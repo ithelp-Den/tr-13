@@ -17,7 +17,7 @@
 .s-bonuses__btn {
   position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;
   padding: 19u 20u; border-radius: 100u; background: #fff; color: #000;
-  font-weight: 700; font-size: 24u; line-height: 24u; text-transform: uppercase; white-space: nowrap;
+  font-weight: 700; font-size: 24u; line-height: 24.345u; text-transform: uppercase; white-space: nowrap;
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
 }
 .s-bonuses__btn span { position: relative; z-index: 1; }
@@ -42,7 +42,7 @@
 }
 .s-bonuses__icon { position: absolute; left: 17.8u; top: 18.4u; width: 47.7u; height: 47.7u; border-radius: 10u; background: linear-gradient(90deg, #e93519, #d00003 50.9%, #e93519); display: flex; align-items: center; justify-content: center; }
 .s-bonuses__icon img { width: 23.8u; height: 23.8u; }
-.s-bonuses__glass-title { position: absolute; left: 81.7u; top: 22u; width: 260u; font-weight: 700; font-size: 24u; line-height: 28u; color: #e93519; text-transform: uppercase; }
+.s-bonuses__glass-title { position: absolute; left: 81.7u; top: 26u; width: 260u; font-weight: 700; font-size: 24u; line-height: 20u; color: #e93519; text-transform: uppercase; }
 .s-bonuses__glass-text { position: absolute; left: 81.7u; top: 55u; width: 244.7u; font-size: 16u; line-height: 20u; color: #fff; }
 
 @media (min-width: 800px) {
@@ -58,8 +58,8 @@
   .s-bonuses__glass { left: 51.5u; top: 195u; width: 415.4u; height: 158.9u; filter: drop-shadow(0 4.8u 10.5u rgba(0,0,0,.25)); }
   .s-bonuses__icon { left: 21.5u; top: 22.2u; width: 57.4u; height: 57.4u; border-radius: 12u; }
   .s-bonuses__icon img { width: 28.7u; height: 28.7u; }
-  .s-bonuses__glass-title { left: 99.3u; top: 26u; width: 310u; font-size: 28.9u; line-height: 34u; }
-  .s-bonuses__glass-text { left: 98.4u; top: 66u; width: 294.6u; font-size: 19.3u; line-height: 24u; }
+  .s-bonuses__glass-title { left: 99.3u; top: 31u; width: 310u; font-size: 28.895u; line-height: 24.079u; }
+  .s-bonuses__glass-text { left: 98.4u; top: 66u; width: 294.6u; font-size: 19.263u; line-height: 24.079u; }
 }
 @media (prefers-reduced-motion: reduce) {
   .s-bonuses__fan img { transform: none; opacity: 1; transition: none; }

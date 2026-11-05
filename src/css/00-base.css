@@ -14,8 +14,10 @@
   --bg: #000;
   --text: #fff;
   --font-display: 'League Gothic', 'Impact', 'Arial Narrow', sans-serif;
-  --font-body: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Source Sans 3', Arial, sans-serif;
   --font-num: 'Onest', 'Source Sans 3', sans-serif;
+  --font-gilroy: 'Gilroy', 'Albert Sans', 'Montserrat', sans-serif;
+  --font-anton: 'Anton', 'Impact', 'Arial Narrow', sans-serif;
   --font-helv: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --ease: cubic-bezier(.2, .7, .2, 1);
 }

@@ -29,7 +29,7 @@ Markup that exists only on one device: class `only-m` / `only-d` (display helper
 ## Rules
 * **All text is real HTML text** (headings, prices, labels, button captions, FAQ…). Do NOT bake text into images.
   Exception: the screenshots of chat messages in the reviews slider and any "UI screenshot" that is itself a photo/screenshot.
-* Prices/numbers/CTAs are real elements; every CTA/price tag is an `<a>` (or `<button>` inside) with `data-pay="lifetime"` and `href=""` (empty — it is bound later in js/00-main.js). Give them hover + active + focus-visible states and a smooth transition.
+* Prices/numbers/CTAs are real elements; every CTA/price tag is an `<a>` (or `<button>` inside) with `data-pay="v1"` and `href` = the checkout URL (also bound in js/00-main.js via `ZBL.payUrl`). Give them hover + active + focus-visible states and a smooth transition.
 * Fonts available via the template: `var(--font-display)` League Gothic, `var(--font-body)` Source Sans 3, `var(--font-num)` Onest. "Helvetica Neue" -> `var(--font-helv)`. If the design uses another font, use the closest fallback and say so in your report.
 * Tokens: `--red:#e93519`, `--red-deep:#a92007`, bg `#000`. Take exact colours/gradients/shadows/radii from Figma (get_design_context), not from eyeballing.
 * Figma's `text-box-trim` (cap/alphabetic) means the text box has no extra leading: reproduce positions by matching the *visual* placement (you may use `text-box: trim-both cap alphabetic` — Chrome supports it — but still set explicit line-height).
@@ -49,7 +49,7 @@ Markup that exists only on one device: class `only-m` / `only-d` (display helper
 3. Verify every image file is non-empty, correctly placed, not stretched.
 
 ## Payment link (to be bound later)
-Every CTA / price tag is `<a data-pay="lifetime" href="">`. Set the checkout URL once in `src/js/00-main.js` (`ZBL.payUrl`) and run
+Every CTA / price tag is `<a data-pay="v1" href="https://mmoschool.online/shop/item/13702">`. Set the checkout URL once in `src/js/00-main.js` (`ZBL.payUrl`) and run
 `node build.mjs` — all `[data-pay]` elements get the `href`. While it is empty, clicks are ignored (no jump to `#`).
 
 ## Editing / QA

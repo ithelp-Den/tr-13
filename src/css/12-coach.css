@@ -23,7 +23,7 @@
 .s-coach__followers { position: absolute; left: 221u; top: 224.3u; width: 139u; height: 90u; color: #fff; text-align: center; }
 .s-coach__big { position: absolute; left: 0; right: 0; top: 0; font-family: var(--font-display); font-size: 64u; line-height: 40u; text-box: trim-both cap alphabetic; }
 .s-coach__big small { font-size: 48u; }
-.s-coach__fol { position: absolute; left: 0; right: 0; top: 56u; font-family: var(--font-num); font-size: 18u; line-height: 18u; text-box: trim-both cap alphabetic; }
+.s-coach__fol { position: absolute; left: 0; right: 0; top: 56u; font-family: var(--font-gilroy); font-weight: 400; font-size: 18u; line-height: 18u; text-box: trim-both cap alphabetic; }
 .s-coach__woman { position: absolute; left: -145.4u; top: 44.9u; width: 625.3u; height: 425.4u; max-width: none; }
 
 .s-coach__pills { position: absolute; inset: 0; pointer-events: none; }
@@ -58,8 +58,8 @@
 }
 .s-coach__qmark { position: absolute; left: 0; top: 78u; width: 116u; height: 84u; max-width: none; }
 .s-coach__qtext { position: relative; display: flex; flex-direction: column; gap: 24u; }
-.s-coach__q1 { font-weight: 500; font-size: 16u; line-height: 22.6u; text-box: trim-both cap alphabetic; }
-.s-coach__q2 { width: 268u; font-weight: 400; font-size: 16u; line-height: 22.6u; }
+.s-coach__q1 { font-weight: 500; font-size: 16u; line-height: normal; text-box: trim-both cap alphabetic; }
+.s-coach__q2 { width: 268u; font-weight: 400; font-size: 16u; line-height: normal; }
 .s-coach__q2-title { color: #e93519; font-weight: 700; text-transform: uppercase; }
 
 @media (min-width: 800px) {

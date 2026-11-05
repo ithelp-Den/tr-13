@@ -1,0 +1,108 @@
+/* mobile-first: artboard 428 x 886; block origin (33,63) */
+.s-coach { position: relative; height: 886u; background: #000; overflow: hidden; }
+.s-coach__title {
+  position: absolute; left: 26u; top: 63u; width: 375.8u; text-align: center;
+  font-family: var(--font-display); font-weight: 400; text-transform: uppercase; color: #fff;
+  font-size: 68.6u; line-height: 64.3u; text-box: trim-both cap alphabetic;
+}
+.s-coach__stage { position: absolute; left: 33u; top: 63u; width: 362u; height: 511u; }
+.s-coach__media { position: absolute; left: 2u; top: 67u; width: 359u; height: 445u; border-radius: 24u; overflow: hidden; isolation: isolate; background: #4e4e4e; }
+.s-coach__zoom { position: absolute; inset: 0; transform: scale(1.12); transform-origin: 50% 40%; transition: transform 2.8s var(--ease); will-change: transform; }
+.s-coach__stage.is-in .s-coach__zoom { transform: scale(1); }
+/* children coords below = block coords minus media origin (2,67) */
+.s-coach__bg { position: absolute; left: -221.7u; top: -432.9u; width: 626u; height: 1377u; max-width: none; object-fit: cover; }
+.s-coach__tint { position: absolute; left: -8.5u; top: -24.9u; width: 376u; height: 470u; border-radius: 15u; background: #e93519; mix-blend-mode: overlay; }
+.s-coach__word {
+  position: absolute; width: 612u; text-align: center; white-space: nowrap;
+  font-family: var(--font-helv); font-weight: 700; text-transform: uppercase; font-size: 65u; line-height: 25u;
+  color: rgba(255,255,255,.24); opacity: .63; text-box: trim-both cap alphabetic;
+}
+.s-coach__word--1 { left: -113u; top: 151u; }
+.s-coach__word--2 { left: -72u; top: 217u; }
+.s-coach__circle { position: absolute; left: 227.9u; top: 196.2u; width: 125u; height: 126u; border-radius: 200u; background: rgba(255,255,255,.1); }
+.s-coach__followers { position: absolute; left: 221u; top: 224.3u; width: 139u; height: 90u; color: #fff; text-align: center; }
+.s-coach__big { position: absolute; left: 0; right: 0; top: 0; font-family: var(--font-display); font-size: 64u; line-height: 40u; text-box: trim-both cap alphabetic; }
+.s-coach__big small { font-size: 48u; }
+.s-coach__fol { position: absolute; left: 0; right: 0; top: 56u; font-family: var(--font-num); font-size: 18u; line-height: 18u; text-box: trim-both cap alphabetic; }
+.s-coach__woman { position: absolute; left: -145.4u; top: 44.9u; width: 625.3u; height: 425.4u; max-width: none; }
+
+.s-coach__pills { position: absolute; inset: 0; pointer-events: none; }
+.s-coach__pill {
+  position: absolute; width: 126u; height: 31u; display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.32); border-radius: 14u; color: #fff; font-weight: 600; font-size: 14u; line-height: 17u; white-space: nowrap;
+  -webkit-backdrop-filter: blur(6u); backdrop-filter: blur(6u);
+  animation: s-coach-float 5s ease-in-out infinite;
+}
+.s-coach__pill--1 { left: 10u; top: 175.9u; }
+.s-coach__pill--2 { left: 51u; top: 224.9u; animation-delay: -1.7s; animation-duration: 5.6s; }
+.s-coach__pill--3 { left: 9u; top: 273.9u; animation-delay: -3.2s; animation-duration: 6.2s; }
+@keyframes s-coach-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6u); } }
+
+/* profile card: on mobile it sits inside the photo, block coords -> section coords (+33,+63) */
+.s-coach__profile {
+  position: absolute; left: 73.5u; top: 149u; width: 283u; height: 75u; background: #fff; border: 1px solid #171717; border-radius: 10u; z-index: 2;
+  color: #262626; font-family: var(--font-helv); box-shadow: none;
+}
+.s-coach__avatar { position: absolute; left: 11u; top: 9u; width: 62u; height: 62u; border-radius: 50%; object-fit: cover; }
+.s-coach__name { position: absolute; left: 88.5u; top: 13u; font-size: 8.4u; line-height: 10u; font-weight: 600; }
+.s-coach__stat { position: absolute; top: 31u; font-size: 9u; line-height: 11u; text-align: left; }
+.s-coach__stat b { display: block; font-weight: 600; font-size: 10.2u; line-height: 12u; }
+.s-coach__stat span { display: block; font-size: 9.2u; line-height: 11u; }
+.s-coach__stat--1 { left: 88u; }
+.s-coach__stat--2 { left: 149u; }
+.s-coach__stat--3 { left: 222u; }
+
+.s-coach__quote {
+  position: absolute; left: 24u; top: 584u; width: 380u; height: 239u; border: 2px solid #e93519; border-radius: 24u; overflow: hidden;
+  box-shadow: 0 4u 16u rgba(0,0,0,.25); padding: 24u 14u 24u 93u; color: #fff;
+}
+.s-coach__qmark { position: absolute; left: 0; top: 78u; width: 116u; height: 84u; max-width: none; }
+.s-coach__qtext { position: relative; display: flex; flex-direction: column; gap: 24u; }
+.s-coach__q1 { font-weight: 500; font-size: 16u; line-height: 22.6u; text-box: trim-both cap alphabetic; }
+.s-coach__q2 { width: 268u; font-weight: 400; font-size: 16u; line-height: 22.6u; }
+.s-coach__q2-title { color: #e93519; font-weight: 700; text-transform: uppercase; }
+
+@media (min-width: 800px) {
+  .s-coach { height: 769u; }
+  .s-coach__title { left: 758u; top: 106.4u; width: 786u; text-align: left; font-size: 90u; line-height: 77u; }
+  .s-coach__stage { left: 60u; top: 60u; width: 644u; height: 649u; }
+  .s-coach__media { left: 2.1u; top: .55u; width: 641.3u; height: 648.8u; border-radius: 42.85u; }
+  .s-coach__zoom { transform-origin: 55% 45%; }
+  .s-coach__bg { left: -394.4u; top: -918.5u; width: 1117.6u; height: 2458.4u; }
+  .s-coach__tint { left: -14.7u; top: -190u; width: 671.3u; height: 839.1u; border-radius: 26.8u; }
+  .s-coach__word { width: 1092.6u; font-size: 116u; line-height: 44.6u; }
+  .s-coach__word--1 { left: -204.9u; top: 124u; }
+  .s-coach__word--2 { left: -131.7u; top: 241.8u; }
+  .s-coach__circle { left: 408.3u; top: 204.6u; width: 223.2u; height: 225u; }
+  .s-coach__followers { left: 394.5u; top: 254.9u; width: 248u; height: 160u; }
+  .s-coach__big { font-size: 114.3u; line-height: 71.4u; }
+  .s-coach__big small { font-size: 85.7u; }
+  .s-coach__fol { font-size: 32.1u; line-height: 32u; top: 100u; }
+  .s-coach__woman { left: -258u; top: -66u; width: 1116.9u; height: 759.1u; }
+  .s-coach__pill { width: 225u; height: 55.3u; border-radius: 25u; font-size: 25u; line-height: 30.4u; -webkit-backdrop-filter: blur(8u); backdrop-filter: blur(8u); }
+  .s-coach__pill--1 { left: 17.9u; top: 49.3u; }
+  .s-coach__pill--2 { left: 91u; top: 136.7u; }
+  .s-coach__pill--3 { left: 16.1u; top: 224.2u; }
+  @keyframes s-coach-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10u); } }
+
+  .s-coach__profile { left: 758u; top: 210.5u; width: 622u; height: 155.5u; border-radius: 21.9u; border: 0; }
+  .s-coach__avatar { left: 24u; top: 14.5u; width: 137u; height: 137u; }
+  .s-coach__name { left: 195u; top: 28u; font-size: 18.5u; line-height: 20u; }
+  .s-coach__stat { top: 68u; }
+  .s-coach__stat b { font-size: 22u; line-height: 26u; }
+  .s-coach__stat span { font-size: 20u; line-height: 24u; }
+  .s-coach__stat--1 { left: 194u; }
+  .s-coach__stat--2 { left: 327u; }
+  .s-coach__stat--3 { left: 486u; }
+
+  .s-coach__quote { left: 758u; top: 411.6u; width: 622u; height: 251u; padding: 24u 49u 24u 93u; display: flex; align-items: center; justify-content: flex-end; }
+  .s-coach__qmark { top: 64.5u; width: 169u; height: 122u; }
+  .s-coach__qtext { align-items: flex-end; width: 415u; }
+  .s-coach__q1 { width: 411u; font-size: 20u; line-height: normal; position: relative; top: 9u; }
+  .s-coach__q2 { width: 415u; font-size: 20u; line-height: normal; }
+  .s-coach__q2-title { font-size: 24u; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .s-coach__zoom { transform: none; transition: none; }
+  .s-coach__pill { animation: none; }
+}

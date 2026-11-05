@@ -1,0 +1,69 @@
+.s-why-now { background: #000; color: #fff; overflow: hidden; }
+.s-why-now__inner { padding: 40u 24u; display: flex; flex-direction: column; align-items: center; gap: 32u; }
+.s-why-now__title {
+  margin: 0; width: 345u; text-align: center; font-family: var(--font-display); font-weight: 400;
+  font-size: 45u; line-height: 45u; text-transform: uppercase; text-box: trim-both cap alphabetic;
+}
+.s-why-now__white, .s-why-now__red { display: block; }
+.s-why-now__white { color: #fff; }
+.s-why-now__red { color: var(--red); }
+
+.s-why-now__card { position: relative; width: 100%; height: 100%; border-radius: 15u; }
+.s-why-now__bg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.s-why-now__tile {
+  position: absolute; left: 40u; top: 40u; width: 60u; height: 60u; border-radius: 10u; background: #fff;
+  display: flex; align-items: center; justify-content: center;
+}
+.s-why-now__tile img { display: block; width: 30u; height: 30u; }
+.s-why-now__h, .s-why-now__p { position: absolute; margin: 0; color: #fff; text-box: trim-both cap alphabetic; }
+.s-why-now__h { text-transform: uppercase; font-family: var(--font-body); font-weight: 500; }
+.s-why-now__p { font-family: var(--font-helv); font-weight: 400; }
+
+/* mobile */
+.s-why-now__mgrid { position: relative; width: 380u; height: 424u; }
+.s-why-now__mcell { position: absolute; left: 0; width: 380u; }
+.s-why-now__mcell--1 { top: 0; height: 201u; }
+.s-why-now__mcell--2 { top: 214u; height: 210u; }
+.s-why-now__mcell .s-why-now__tile { top: 40u; }
+.s-why-now__mcell--1 .s-why-now__h { left: 120u; top: 50.6u; width: 224u; font-size: 24u; line-height: 20u; }
+.s-why-now__mcell--1 .s-why-now__p { left: 118u; top: 90.6u; width: 227u; font-size: 16u; line-height: 20u; }
+.s-why-now__mcell--2 .s-why-now__h { left: 120u; top: 47.9u; width: 255u; font-size: 24u; line-height: 27u; }
+.s-why-now__mcell--2 .s-why-now__p { left: 120u; top: 108u; width: 254u; font-size: 16u; line-height: 20u; }
+.s-why-now__arrow, .s-why-now__cta-text, .s-why-now__btn { display: none; }
+
+@media (min-width: 800px) {
+  .s-why-now__inner { padding: 60u; gap: 45u; align-items: flex-start; width: 1290u; margin: 0 auto; }
+  .s-why-now__title { width: auto; text-align: left; font-size: 70u; line-height: 77u; white-space: nowrap; }
+  .s-why-now__white, .s-why-now__red { display: inline; }
+  .s-why-now__red::before { content: " "; }
+  .s-why-now__grid { position: relative; width: 1170u; height: 660u; }
+  .s-why-now__cell { position: absolute; width: 376u; height: 320u; }
+  .s-why-now__cell--1 { left: 0; top: 0; }
+  .s-why-now__cell--2 { left: 437u; top: 0; }
+  .s-why-now__cell--3 { left: 794u; top: 0; }
+  .s-why-now__cell--4 { left: 0; top: 340u; }
+  .s-why-now__card { border-radius: 15u; }
+  .s-why-now__h { left: 40u; top: 150.3u; width: 235u; font-size: 24u; line-height: 24u; font-weight: 400; }
+  .s-why-now__h--wide { width: 276u; }
+  .s-why-now__p { left: 40u; top: 213.3u; width: 210u; font-size: 18u; line-height: 20u; font-family: var(--font-body); }
+  .s-why-now__tile img[src$="share.svg"] { width: 27u; height: 27u; }
+  .s-why-now__arrow { display: block; position: absolute; left: 467u; top: 395u; width: 100u; height: 100u; transform: rotate(-45deg); animation: why-nudge 1.8s ease-in-out infinite; }
+  .s-why-now__cta-text {
+    display: block; position: absolute; left: 599u; top: 403.3u; width: 307u; margin: 0; font-family: var(--font-display);
+    font-size: 55u; line-height: 55u; text-transform: uppercase; text-box: trim-both cap alphabetic;
+  }
+  .s-why-now__btn {
+    display: flex; align-items: center; justify-content: center; position: absolute; left: 507u; top: 580u; width: 350u; height: 80u;
+    border: 1px solid #fff; border-radius: 150u; color: #fff; text-decoration: none; font-family: var(--font-body);
+    font-size: 24u; letter-spacing: 2.52u; text-transform: uppercase;
+    transition: background .3s var(--ease), box-shadow .3s var(--ease), transform .3s var(--ease), border-color .3s var(--ease);
+  }
+  .s-why-now__btn:hover { background: rgba(233,53,25,.9); border-color: var(--red); box-shadow: 0 0 30u rgba(233,53,25,.6); transform: translateY(-3u); }
+  .s-why-now__btn:active { transform: scale(.98); }
+  .s-why-now__btn:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+}
+@keyframes why-nudge {
+  0%, 100% { transform: rotate(-45deg) translateY(0); }
+  50% { transform: rotate(-45deg) translateY(-10u); }
+}
+@media (prefers-reduced-motion: reduce) { .s-why-now__arrow { animation: none; } }

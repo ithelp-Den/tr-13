@@ -1,0 +1,45 @@
+.s-watch-video { background: #000; color: #fff; overflow: hidden; }
+.s-watch-video__inner { padding: 40u 24u; display: flex; flex-direction: column; align-items: center; gap: 0; }
+.s-watch-video__title {
+  margin: 0 0 59u; width: 390u; text-align: center; font-family: var(--font-display); font-weight: 400;
+  font-size: 45u; line-height: 45u; text-transform: uppercase; text-box: trim-both cap alphabetic;
+}
+.s-watch-video__title span { display: block; }
+.s-watch-video__title .only-m, .s-watch-video__title .only-d { display: inline; }
+.s-watch-video__red { color: var(--red); }
+.s-watch-video__l3 { color: #fff; }
+.s-watch-video__poster { position: relative; width: 380u; height: 300u; border-radius: 20u; overflow: hidden; background: #4e4e4e; }
+.s-watch-video__img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.s-watch-video__btn { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; margin: 0; border: 0; background: none; color: #fff; cursor: pointer; font: inherit; }
+.s-watch-video__ring { position: absolute; left: 95u; top: 55u; width: 190u; height: 190u; transition: transform .5s var(--ease); }
+.s-watch-video__ring::after { content: none; }
+.s-watch-video__label {
+  position: absolute; left: 123.5u; top: 143.2u; width: 131.6u; text-align: center; font-family: 'Albert Sans', var(--font-body), sans-serif;
+  font-size: 14u; line-height: 25u; text-transform: uppercase; text-box: trim-both cap alphabetic;
+}
+.s-watch-video__play { position: absolute; left: 230.7u; top: 190.7u; width: 54.3u; height: 54.3u; display: block; transition: transform .35s var(--ease); }
+.s-watch-video__play::before {
+  content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px solid var(--red); animation: wv-pulse 2.2s ease-out infinite; pointer-events: none;
+}
+.s-watch-video__play-bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.s-watch-video__play-ic { position: absolute; left: 19.9u; top: 19u; width: 15.1u; height: 16.3u; }
+.s-watch-video__btn:hover .s-watch-video__play, .s-watch-video__btn:focus-visible .s-watch-video__play { transform: scale(1.12); }
+.s-watch-video__btn:hover .s-watch-video__ring { transform: scale(1.04); }
+.s-watch-video__btn:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
+.s-watch-video__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; z-index: 2; }
+.s-watch-video__poster.is-playing .s-watch-video__btn, .s-watch-video__poster.is-playing .s-watch-video__img { visibility: hidden; }
+
+@media (min-width: 800px) {
+  .s-watch-video__inner { flex-direction: row; justify-content: center; align-items: center; gap: 100u; padding: 60u; min-height: 498u; box-sizing: border-box; }
+  .s-watch-video__title { margin: 0; width: 290u; text-align: left; font-size: 70u; line-height: 60u; }
+  .s-watch-video__title .only-m { display: none; }
+  .s-watch-video__l1 { padding-left: 43u; }
+  .s-watch-video__l3 { padding-left: 31u; }
+  .s-watch-video__poster { width: 672u; height: 378u; border-radius: 15u; flex: none; }
+  .s-watch-video__ring { left: 230u; top: 84u; width: 210u; height: 210u; }
+  .s-watch-video__label { left: 230u; width: 210u; top: 183u; font-size: 16u; }
+  .s-watch-video__play { left: 380u; top: 234u; width: 60u; height: 60u; }
+  .s-watch-video__play-ic { left: 22u; top: 21u; width: 16.7u; height: 18u; }
+}
+@keyframes wv-pulse { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(1.9); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .s-watch-video__play::before { animation: none; } }

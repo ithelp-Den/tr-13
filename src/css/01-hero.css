@@ -1,0 +1,67 @@
+/* 01-hero — mobile-first (428), desktop >= 800 (1440) */
+.s-hero { background: #000; padding: 40u 14u 40u; position: relative; }
+.s-hero__card { position: relative; width: 400u; height: 710u; border-radius: 24u; overflow: hidden; margin: 0 auto; background: #5a0d05; isolation: isolate; }
+.s-hero__art { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; }
+.s-hero__art img, .s-hero__art > div { position: absolute; }
+.s-hero__bg { inset: 0; width: 100%; height: 100%; }
+.s-hero__cards--m { left: 0; top: 184.7u; width: 400u; height: 400u; }
+.s-hero__rib { left: -142u; top: -56u; width: 732u; height: 220u; transform: rotate(-3.46deg); }
+.s-hero__rib img { inset: 0; width: 100%; height: 100%; }
+.s-hero__photo--m { left: -297u; top: 207u; width: 806u; height: 418u; max-width: none; animation: hero-photo-in 1.1s var(--ease) both; }
+
+.s-hero__head { position: absolute; left: 0; right: 0; top: 0; text-align: center; }
+.s-hero__title { position: absolute; left: 50%; top: 93u; width: 321.25u; margin-left: -160.6u; font-size: 66.374u; line-height: 66.374u; color: #fff; text-box: trim-both cap alphabetic; animation: hero-up .9s var(--ease) .15s both; }
+.s-hero__title span { display: block; }
+.s-hero__sub { position: absolute; left: 0; right: 0; top: 227u; font-size: 24u; line-height: 27.658u; color: #fff; text-box: trim-both cap alphabetic; animation: hero-up .9s var(--ease) .3s both; }
+
+.s-hero__buy { position: absolute; left: 0; right: 0; top: 517u; display: flex; flex-direction: column; align-items: center; gap: 8u; }
+.s-hero__prices { display: flex; align-items: flex-end; justify-content: center; gap: 8u; animation: hero-up .9s var(--ease) .45s both; }
+.s-hero__offer { width: 158u; display: flex; flex-direction: column; align-items: center; gap: 14u; }
+.s-hero__label { font-family: var(--font-helv); font-size: 16u; line-height: 23u; color: #fff; text-box: trim-both cap alphabetic; white-space: nowrap; }
+.s-hero__tag { display: flex; align-items: center; justify-content: center; width: 100%; padding: 14u; border-radius: 12u; background: rgba(255,255,255,.1); color: #fff; font-weight: 700; font-size: 60u; line-height: 70u; text-transform: uppercase; text-align: center; white-space: nowrap; transition: transform .35s var(--ease), background-color .35s, box-shadow .35s; }
+.s-hero__tag span { display: block; text-box: trim-both cap alphabetic; }
+.s-hero__old { height: 68u; padding: 10u; border-radius: 12u; background: #2a2a2a; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.s-hero__old-in { position: relative; width: 82u; height: 38u; display: flex; flex-direction: column; align-items: center; gap: 9u; text-align: center; color: #fff; }
+.s-hero__old-l { width: 100%; font-size: 14u; line-height: 23u; text-box: trim-both cap alphabetic; }
+.s-hero__old-p { width: 100%; font-size: 30u; line-height: 70u; text-transform: uppercase; text-box: trim-both cap alphabetic; }
+.s-hero__strike { position: absolute; left: 5u; top: 28u; width: 74u; height: 2u; background: var(--red); }
+
+.s-hero__cta { display: flex; align-items: center; justify-content: center; width: 350u; height: 70u; padding: 10u; border: 1px solid #fff; border-radius: 100u; color: #fff; font-size: 24u; line-height: 1.205; letter-spacing: 2.52u; text-transform: uppercase; background: rgba(0,0,0,.14); transition: transform .35s var(--ease), box-shadow .35s, background-color .35s; animation: hero-up .9s var(--ease) .6s both; }
+.s-hero__cta span { display: block; text-box: trim-both cap alphabetic; white-space: nowrap; }
+
+.s-hero__tag:hover { background: rgba(255,255,255,.18); transform: translateY(-3u); box-shadow: 0 10u 30u rgba(233,53,25,.45); animation: hero-pulse 1.2s ease-in-out infinite; }
+.s-hero__tag:active, .s-hero__cta:active { transform: translateY(0) scale(.97); }
+.s-hero__cta:hover { transform: translateY(-4u); background: rgba(233,53,25,.55); box-shadow: 0 0 36u rgba(233,53,25,.75), 0 12u 30u rgba(0,0,0,.35); }
+.s-hero__tag:focus-visible, .s-hero__cta:focus-visible { outline: 2px solid #fff; outline-offset: 4u; }
+
+@keyframes hero-up { from { opacity: 0; transform: translateY(28u); } to { opacity: 1; transform: none; } }
+@keyframes hero-photo-in { from { opacity: 0; transform: translateX(30u); } to { opacity: 1; transform: none; } }
+@keyframes hero-pulse { 0%, 100% { transform: translateY(-3u) scale(1); } 50% { transform: translateY(-3u) scale(1.04); } }
+@media (prefers-reduced-motion: reduce) {
+  .s-hero *, .s-hero *::before { animation: none !important; transition: none !important; }
+}
+
+@media (min-width: 800px) {
+  .s-hero { padding: 36u 20u; }
+  .s-hero__card { width: 1400u; height: 670u; border-radius: 32u; }
+  .s-hero__cards--d { left: 49.07%; top: -1.45%; width: 50.93%; height: 106.41%; }
+  .s-hero__grain { left: 0; top: 44u; width: 1400u; height: 1152u; background: url(../images/01-hero/grain.webp) 0 0 / 220u 220u; opacity: .1; }
+  .s-hero__rib--d1 { left: -69u; top: -231u; width: 1625u; height: 650u; transform: none; }
+  .s-hero__rib--d2 { left: -69u; top: -281u; width: 1625u; height: 650u; transform: rotate(16.19deg); }
+  .s-hero__rib--d2 img { animation-delay: -4s; animation-direction: alternate-reverse; }
+  .s-hero__photo--d { left: 198u; top: 109u; width: 1360u; height: 706u; max-width: none; animation: hero-photo-in 1.1s var(--ease) both; }
+
+  .s-hero__title { left: 65u; top: 140u; width: 784u; margin-left: 0; font-size: 90u; line-height: 91u; text-align: left; }
+  .s-hero__sub { left: 65u; right: auto; top: 140u; margin-top: 184u; font-size: 36u; line-height: 27u; text-align: left; }
+  .s-hero__buy { left: 65u; right: auto; width: 427u; top: 393u; gap: 24u; }
+  .s-hero__prices { gap: 9.76u; }
+  .s-hero__offer { width: 192.76u; gap: 17.08u; }
+  .s-hero__label { font-size: 18u; line-height: 28.06u; }
+  .s-hero__tag { padding: 17.08u; border-radius: 14.64u; font-size: 70u; line-height: 85.4u; }
+  .s-hero__old { height: 82.96u; padding: 12.2u; border-radius: 14.64u; }
+  .s-hero__old-in { width: 100.04u; height: 46.36u; gap: 10.98u; }
+  .s-hero__old-l { font-size: 18u; line-height: 28.06u; }
+  .s-hero__old-p { font-size: 36u; line-height: 85.4u; }
+  .s-hero__strike { left: 6.1u; top: 35.4u; width: 90.28u; height: 2.44u; }
+  .s-hero__cta { width: 427u; height: 85.4u; padding: 12.2u; border-width: 1.22px; border-radius: 122u; font-size: 32u; letter-spacing: 3.36u; }
+}

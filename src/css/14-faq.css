@@ -1,0 +1,46 @@
+.s-faq { background: #000; color: #fff; padding: 40u 24u; }
+.s-faq__wrap { display: flex; flex-direction: column; width: 380u; margin: 0 auto; }
+.s-faq__title { width: 377u; font-size: 45u; line-height: 45u; text-align: center; text-box: trim-both cap alphabetic; }
+.s-faq__list { margin-top: 58.5u; margin-left: 3u; width: 377u; border-top: 1px solid #d6d6d6; }
+.s-faq__item { border-bottom: 1px solid #d6d6d6; }
+.s-faq__q { font: inherit; }
+.s-faq__btn { position: relative; display: block; width: 100%; text-align: left; padding: 25.5u 0 25.5u 38u; cursor: pointer; color: #fff; transition: opacity .3s var(--ease); }
+.s-faq__btn:hover { opacity: .75; }
+.s-faq__btn:focus-visible { outline: 2px solid var(--red); outline-offset: -2px; border-radius: 4u; }
+.s-faq__qt { display: block; font-family: var(--font-body); font-weight: 400; font-size: 20u; line-height: 25u; text-transform: uppercase; }
+.s-faq__plus { position: absolute; left: 0; top: 31.5u; width: 15u; height: 15u; transition: transform .45s var(--ease); }
+.s-faq__plus::before, .s-faq__plus::after { content: ""; position: absolute; background: #fff; }
+.s-faq__plus::before { left: 6.65u; top: 0; width: 1.68u; height: 15u; }
+.s-faq__plus::after { left: 0; top: 6.74u; width: 15u; height: 1.53u; }
+.s-faq__item:nth-child(4) .s-faq__btn { padding-bottom: 32.5u; } /* two-line question: Figma row is 108u */
+.s-faq__item.is-open .s-faq__plus { transform: rotate(-45deg); }
+.s-faq__panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease); }
+.s-faq__item.is-open .s-faq__panel { grid-template-rows: 1fr; }
+.s-faq__clip { overflow: hidden; min-height: 0; }
+.s-faq__a { margin: 0 0 30u 38u; width: 309u; font-family: var(--font-body); font-size: 16u; line-height: 20u; opacity: 0; transform: translateY(-6u); transition: opacity .4s var(--ease), transform .5s var(--ease); }
+.s-faq__item.is-open .s-faq__a { opacity: 1; transform: none; transition-delay: .12s; }
+
+.s-faq__cta { margin-top: 53.2u; display: flex; align-items: center; justify-content: center; width: 380u; height: 70u; border: 1px solid #fff; border-radius: 150u; background: #000; font-family: var(--font-helv); font-size: 18u; line-height: 1.205; letter-spacing: 1.89u; text-transform: uppercase; text-align: center; white-space: nowrap; transition: background-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease), box-shadow .3s var(--ease); }
+.s-faq__cta:hover { background: #fff; color: #000; box-shadow: 0 0 30u rgba(255,255,255,.35); }
+.s-faq__cta:active { transform: scale(.98); }
+.s-faq__cta:focus-visible { outline: 2px solid var(--red); outline-offset: 4u; }
+
+@media (min-width: 800px) {
+  .s-faq { padding: 60u; }
+  .s-faq__list { margin-top: 0; }
+  .s-faq__wrap { position: relative; width: 1170u; height: 488u; display: block; }
+  .s-faq__title { position: absolute; left: 0; top: 0; width: 448u; font-size: 70u; line-height: 75u; text-align: left; }
+  .s-faq__list { position: absolute; left: 600u; top: 0; margin: 0; width: 570u; padding-left: 0; }
+  .s-faq__list { border-top: 0; }
+  .s-faq__item { margin-left: 3u; width: 567u; border-top: 0; }
+  .s-faq__item:first-child { border-top: 1px solid #d6d6d6; }
+  .s-faq__btn { padding: 24u 0 24u 48u; }
+  .s-faq__item:nth-child(4) .s-faq__btn { padding-bottom: 24u; }
+  .s-faq__qt { font-family: var(--font-helv); font-size: 25u; line-height: 30u; }
+  .s-faq__plus { left: 0; top: 31.5u; }
+  .s-faq__a { margin: 6u 0 24u 48u; font-family: var(--font-helv); }
+  .s-faq__cta { position: absolute; left: 0; top: 408.31u; margin: 0; width: 509u; height: 80u; font-size: 24u; letter-spacing: 2.52u; background: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .s-faq__panel, .s-faq__plus, .s-faq__a { transition: none; }
+}

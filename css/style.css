@@ -147,8 +147,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .s-reviews__slider { height: calc(506 * var(--u)); overflow: hidden; margin: 0; cursor: grab; touch-action: pan-y; }
 .s-reviews__slider:active { cursor: grabbing; }
 .s-reviews .swiper-wrapper { transition-timing-function: var(--ease); }
-.s-reviews__slide { width: calc(327.76 * var(--u)); height: calc(506 * var(--u)); flex-shrink: 0; margin-right: calc(12 * var(--u)); user-select: none; }
-.s-reviews__slide img { width: 100%; height: auto; border-radius: calc(12.5 * var(--u)); max-width: none; pointer-events: none; -webkit-user-drag: none; }
+.s-reviews__slide { width: auto; height: calc(506 * var(--u)); flex-shrink: 0; margin-right: calc(12 * var(--u)); user-select: none; }
+.s-reviews__slide img { width: calc(var(--w) * 1.3211 * var(--u)); height: calc(var(--h) * 1.3211 * var(--u)); border-radius: calc(12.5 * var(--u)); max-width: none; pointer-events: none; -webkit-user-drag: none; }
 
 .s-reviews__controls { position: relative; width: calc(380 * var(--u)); height: calc(69.23 * var(--u)); margin-top: calc(32 * var(--u)); }
 .s-reviews__progress { position: absolute; left: 0; top: calc(35 * var(--u)); width: calc(200 * var(--u)); height: calc(4 * var(--u)); }

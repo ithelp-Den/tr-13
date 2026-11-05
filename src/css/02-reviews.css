@@ -5,8 +5,8 @@
 .s-reviews__slider { height: 506u; overflow: hidden; margin: 0; cursor: grab; touch-action: pan-y; }
 .s-reviews__slider:active { cursor: grabbing; }
 .s-reviews .swiper-wrapper { transition-timing-function: var(--ease); }
-.s-reviews__slide { width: 327.76u; height: 506u; flex-shrink: 0; margin-right: 12u; user-select: none; }
-.s-reviews__slide img { width: 100%; height: auto; border-radius: 12.5u; max-width: none; pointer-events: none; -webkit-user-drag: none; }
+.s-reviews__slide { width: auto; height: 506u; flex-shrink: 0; margin-right: 12u; user-select: none; }
+.s-reviews__slide img { width: calc(var(--w) * 1.3211 * var(--u)); height: calc(var(--h) * 1.3211 * var(--u)); border-radius: 12.5u; max-width: none; pointer-events: none; -webkit-user-drag: none; }
 
 .s-reviews__controls { position: relative; width: 380u; height: 69.23u; margin-top: 32u; }
 .s-reviews__progress { position: absolute; left: 0; top: 35u; width: 200u; height: 4u; }
